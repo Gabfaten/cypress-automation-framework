@@ -6,7 +6,7 @@ describe("Iterate over elements", () => {
     cy.get("a[href*='product/category&path=']").contains("Hair Care").click();
   })
 
-  it.skip("Log information of all hair care products", () => {
+  it("Log information of all hair care products", () => {
     cy.get(".fixed_wrapper .prdocutname").each(($el, index, $list) => {
       cy.log("Index: " + index + " : " + $el.text())
     });
