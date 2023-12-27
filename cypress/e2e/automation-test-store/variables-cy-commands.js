@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe("Verifying variables, cypress commands and jquery commands", () => {
-    it.skip("Navigating to specific product pages", () => {
+    it("Navigating to specific product pages", () => {
       cy.visit("https://www.automationteststore.com/");
       //The following will fail
         // const makeupLink = cy.get("a[href*='product/category&path=']").contains("Makeup")
@@ -20,7 +20,7 @@ describe("Verifying variables, cypress commands and jquery commands", () => {
         cy.get("a[href*='product/category&path=']").contains("Makeup").click();
     });
 
-    it.skip("Navigating to specific product pages", () => {
+    it("Navigating to specific product pages", () => {
         cy.visit("https://automationteststore.com/")
         cy.get("a[href*='product/category&path=']").contains("Makeup").click()
 
@@ -33,7 +33,7 @@ describe("Verifying variables, cypress commands and jquery commands", () => {
             cy.log("Found header text: " + headerText)
         })
     });
-    it.skip("Validate properties of the Contact Us Page", () => {
+    it("Validate properties of the Contact Us Page", () => {
         cy.visit("https://automationteststore.com/index.php?rt=content/contact")
 
         //Uses cypress commands and chaining

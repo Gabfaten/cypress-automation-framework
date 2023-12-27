@@ -12,11 +12,11 @@ describe("Iterate over elements", () => {
     });
   });
 
-  it.skip("Add specific product to basket", () => {
+  it("Add specific product to basket", () => {
     cy.selectProduct('Curls to straight Shampoo');
   });
 
-  it.skip("Add another specific product to basket", () => {
+  it("Add another specific product to basket", () => {
     cy.selectProduct('Seaweed Conditioner');
   });
 
